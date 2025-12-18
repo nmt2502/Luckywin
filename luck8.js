@@ -82,7 +82,7 @@ function advancedPredictPattern(history) {
 
 app.get('/api/taixiu/lottery', async (req, res) => {
   try {
-    const response = await fetch('https://1.bot/GetNewLottery/LT_TaixiuMD5');
+    const response = await fetch('https://game-api.luckywinoo.com/app/getTaixiuMd5TableListInfo');
     const json = await response.json();
 
     if (!json || json.state !== 1) {
